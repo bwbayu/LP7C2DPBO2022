@@ -23,3 +23,4 @@ Program ini memiliki 7 class dan 1 interface, antara lain :
 - jika bola ada di dalam area persegi panjang, maka persegi panjang itu akan berpindah posisi secara random
 
 ## Dokumentasi
+https://www.youtube.com/watch?v=mQos_D74e4U
