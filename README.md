@@ -11,7 +11,15 @@ Program ini memiliki 7 class dan 1 interface, antara lain :
 
 4. class GameObject, class yang mengimplementasikan interface GameInterface. Kelas ini memiliki beberapa atribut seperti posisi (x dan y), dimensi (lebar dan tinggi), kecepatan (velX dan velY), serta jenis objek (type). Class ini juga memiliki beberapa method getter dan setter untuk atribut-atribut tersebut, dan sebuah method getBoundingBox() yang mengembalikan objek Rectangle yang merepresentasikan kotak pembatas objek tersebut.
 
-5. class Handler, 
-6. class Player
-7. class Synchronization
-8. interface GameInterface
+5. class Handler, class Handler yang mengimplementasikan interface GameInterface. Class ini berfungsi sebagai pengelola (handler) dari objek-objek game dalam bentuk ArrayList yang disimpan dalam atribut object.
+
+6. class Player, class Player merupakan subkelas dari kelas GameObject. Metode render digunakan untuk menampilkan bentuk pemain sesuai dengan tipe yang diberikan pada konstruktor. Jika tipe adalah "Player", maka bentuk pemain akan berupa lingkaran berwarna biru langit dengan ukuran 30x30 piksel. Sedangkan jika tipe adalah "Rintangan", maka bentuk pemain akan berupa persegi berwarna biru langit dengan ukuran 100x200 piksel. Metode loop digunakan untuk menginisialisasi kecepatan pada objek pemain, sehingga objek dapat bergerak. Selain itu, metode loop juga menginisialisasi batas pemain sehingga pemain tidak keluar dari area game.
+
+7. class Synchronization, class Synchronization berisi method main(). Pada method main(), program akan membuat objek Game dan memulai menjalankan game tersebut. 
+8. interface GameInterface, sebuah interface Java yang memiliki dua metode: render() dan loop(). Metode render() mengambil objek Graphics sebagai argumennya dan bertanggung jawab untuk merender objek di layar. Metode loop() bertanggung jawab untuk menyegarkan objek di layar.
+
+## Alur Program
+- gunakan WASD/arrow key untuk menggerakkan bola
+- jika bola ada di dalam area persegi panjang, maka persegi panjang itu akan berpindah posisi secara random
+
+## Dokumentasi
