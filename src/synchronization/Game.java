@@ -188,11 +188,10 @@ public class Game extends Canvas implements Runnable
             Font newFont = oldFont.deriveFont(oldFont.getSize() * 1.3f);
             g.setFont(newFont);
             
-            g.setColor(Color.blue);
-            g.drawString("Score : " + Integer.toString(score), 20, 30);
+//            g.setColor(Color.blue);
+//            g.drawString("Score : " + Integer.toString(score), 20, 30);
             g.setColor(Color.white);
             g.drawString("Final Score : " + Integer.toString(finalScore), 20, 50);
-            g.drawString("Total Finish : " + Integer.toString(totalFinish), 20, 70);
             
         }
         
@@ -247,7 +246,7 @@ public class Game extends Canvas implements Runnable
                 rintangan.setX(x);
                 rintangan.setY(y);
                 System.out.println("masuk");
-                totalFinish += 1;
+                this.finalScore += 10;
             }
         }
     }
